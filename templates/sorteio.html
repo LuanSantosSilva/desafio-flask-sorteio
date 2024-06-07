@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block title %}Sorteio{% endblock title %}
+
+{% block alert %}
+<span hidden class="alert alert-light" id="alert"></span>
+{% endblock alert %}
+
+{% block form %}
+    <div>
+        <h5 id="desc" class="card-title">Digite um número de 1 à 10:</h5>
+        <input id="numero" type="number" name="numero" min="1" max="10">
+        <div class="card-footer">
+            <button class="btn btn-primary" id="action" onclick="sortear()">Sortear</button>
+        </div>
+    </div>
+{% endblock form %}
+
+{% block score %}
+<span hidden class="alert alert-info" id="score"></span>
+{% endblock score %}
+
